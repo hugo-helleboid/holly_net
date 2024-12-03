@@ -6,7 +6,6 @@ from collections import OrderedDict
 import numpy as np
 import torch
 import torch.nn as nn
-from imgaug import imgaug as ia
 from termcolor import colored
 from torch.autograd import Variable
 

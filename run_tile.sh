@@ -9,8 +9,8 @@ python run_infer.py \
 --nr_post_proc_workers=16 \
 tile \
 --input_dir="C:\Program Files\Git\image" \
---output_dir= "C:\Program Files\Git\resultat" \
+--output_dir="C:\Users\verne\Documents\GitHub\hover_net2\resultat" \
 --mem_usage=0.1 \
 --draw_dot \
---save_qupath\
---save_raw_map=True\
+--save_qupath \
+--save_raw_map

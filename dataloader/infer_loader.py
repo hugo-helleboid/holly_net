@@ -48,6 +48,8 @@ class SerializeFileList(data.IterableDataset):
             self.curr_patch_idx = 0
             self.stop_patch_idx = len(self.patch_info_list)
             # * check img indexer, implicit protocol in infer.py
+            if len(self.patch_info_list) == 0:
+                raise StopIteration
             global_curr_img_idx = self.patch_info_list[0][-1]
             global_stop_img_idx = self.patch_info_list[-1][-1] + 1
             self.worker_start_img_idx = global_curr_img_idx

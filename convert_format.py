@@ -60,11 +60,9 @@ if __name__ == "__main__":
     # to define the name, and color conversion code for each target format
     type_info_dict = {
         0: ("nolabe", (0, 0, 0)),  # no label
-        1: ("neopla", (255, 0, 0)),  # neoplastic
-        2: ("inflam", (0, 255, 0)),  # inflamm
-        3: ("connec", (0, 0, 255)),  # connective
-        4: ("necros", (255, 255, 0)),  # dead
-        5: ("no-neo", (255, 165, 0)),  # non-neoplastic epithelial
+        1: ("tumeur", (255, 0, 0)),  # neoplastic
+        2: ("non-tumeur", (0, 0, 255))  # inflamm
+        
     }
 
     patterning = lambda x: re.sub("([\[\]])", "[\\1]", x)
